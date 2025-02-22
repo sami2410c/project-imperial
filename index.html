@@ -6,98 +6,63 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="container-fluid ">
-        <div class="parent1">
+       
         <div class="row" >
             <div class="col-md-12 ">
-<nav
-    class="navbar navbar-expand-sm navbar-light bg-light"
->
-    <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page"
-                        >Home -->
-                        <span class="visually-hidden">(current)</span></a
-                    >
-                <!-- </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Dropdown</a
-                    >
-                    <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownId"
-                    >
-                        <a class="dropdown-item" href="#"
-                            >Action 1</a
-                        >
-                        <a class="dropdown-item" href="#"
-                            >Action 2</a
-                        >
+
+            <div class="logo">
+                <h1 id="imp">imperial</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                    </ul>
+                </nav>
+                <div class="icon-search">
+                    <a href=""><i class='fas fa-search' style='font-size:20px'></i></a>
+                    <div class="popups-box search-box">
+                        <input type="text" placeholder="search">
                     </div>
-                </li>
-            </ul> -->
-           <nav>
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0"> 
-                <li class="nav-item dropdown"><a href="#" class="nav-link active">Home</a> </li>
-                <li class="nav-item dropdown"><a href="#" class="nav-link active">Home</a> </li>                
-                <li class="nav-item"><a href="#" class="nav-link active">Home</a> </li>            
-            </ul>
-           </nav>
-           
-           
-           
-            <form class="d-flex my-2 my-lg-0">
-                <input
-                    class="form-control me-sm-2"
-                    type="text"
-                    placeholder="Search"
-                />
-                <button
-                    class="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                >
-                    Search
-                </button>
-            </form>
-        </div>
-    </div>
-</nav>
+
+                </div>
 
 
 
+
+                <div class="icon-user">
+                <a href="#"><i class='fas fa-user-lock' style='font-size:20px'></i></a>
+                <div class="popup-box login-box">
+                    <form action="" class="fom" id="form">
+        
+                        <i class="fa fa-envelope" style="font-size:20px"></i><label for="">Email</label>
+                        <input type="Email" class="form-control">
+                        <i class="fa fa-lock" style="font-size:20px"></i><label for="">password</label>
+                        <input type="password" class="form-control">
+                        <input type="checkbox"><label for="">Remember me </label>
+                        <a href="#">Forget password</a>
+                    <p><button class="btn btn-dark mt-2">Login</button></p>
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                        
+                  
+                    </form>
+                </div>
+            </div>
+            </div>
+                
                 
                 
             </div>
         </div>
-    </div>
+    
 
 <div class="row">
     <div class="col-md-12">
@@ -177,6 +142,7 @@
 <div class="row">
     <div class="butn">
     <center>
+        <button id="all" class="btnall">All pro</button> 
     <button id="daw" class="btn4">Dawlance</button> 
     <button class="btn5">Haier</button>
     <button class="btn6">Orient</button>
@@ -736,7 +702,17 @@
 
     </div>
     <script>
+
         $(document).ready(function(){
+            $("#all").click(function(){
+                $("#dawl").show();
+                $("#sam").show();
+                $("#ori").show();
+                $("#hai").show();
+                $("#kenw").show();
+                $("#Lg").show();
+            
+            });
             $("#daw").click(function(){
                 $("#dawl").show();
                 $("#sam").hide();
@@ -744,15 +720,8 @@
                 $("#hai").hide();
                 $("#kenw").hide();
                 $("#Lg").hide();
-                
-    
-    
-    
-    
-    
-    
-    
-            })
+            
+            });
         })
     </script>
    

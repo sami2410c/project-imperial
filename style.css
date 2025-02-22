@@ -2,21 +2,89 @@
     margin: 0;
     padding: 0;
 }
-
-nav{
-    display: flex;
+.logo{
+    
+    
+    background-color: black;
 }
-nav ul{
+
+.logo, h1{
     display: flex;
-    margin-right: 20px;
+    justify-content: space-around;
+}
+#imp{
+  margin-top: 10px;
+  color: white;
+}
+nav ul {
+    display: flex;
+    margin-top: 15px;
     
 }
 nav ul li{
     list-style-type: none;
-    margin-left: 20px;
-    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.icon-user,a{
+    margin-top: 20px;
+    margin-right: 20px;
+    text-decoration: none; 
+    color: white;
 
 }
+
+.popup-box{
+position: absolute;
+top: 45;
+margin-top: 10px;
+right: 20px;
+border-radius: 10px;
+border: 1px solid white;
+padding: 8px;
+width: 220px;
+display: none;
+z-index: 1000;
+transition: all 0.3s ease-in-out;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+.icon-user:hover .popup-box{
+  
+    display: block;
+}
+.icon-search{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none; 
+    color: white;
+
+}
+.popups-box{
+    position: absolute;
+    margin-top: 10px;
+    right: 100px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    width: 220px;
+    display: none;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    }
+.icon-search:hover .popups-box{
+    display: block;
+}
+
+
+
+
 
 
 
