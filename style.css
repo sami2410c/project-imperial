@@ -2,27 +2,33 @@
     margin: 0;
     padding: 0;
 }
-.logo{
-    
-    
+header{
     background-color: black;
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+.log{
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 70px;
+    background-color: black;
+    margin-left: 14px;
+
 }
 
-.logo, h1{
-    display: flex;
-    justify-content: space-around;
-}
-#imp{
-  margin-top: 10px;
-  color: white;
-}
 nav ul {
     display: flex;
-    margin-top: 15px;
+    margin-top: 18px;
+    margin-left: 50px;
+    display: inline-block ;
     
 }
 nav ul li{
     list-style-type: none;
+    display: inline-block ;
+    
 }
 nav ul li a{
     text-decoration: none;
@@ -30,11 +36,12 @@ nav ul li a{
     color: white;
     font-size: 22px;
     font-weight: 600;
+    
 }
 
 .icon-user,a{
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 23px;
+    margin-left: 15px;
     text-decoration: none; 
     color: white;
 
@@ -59,7 +66,7 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
     display: block;
 }
 .icon-search{
-    margin-top: 20px;
+    margin-top: 23px;
     margin-left: 20px;
     text-decoration: none; 
     color: white;
@@ -299,3 +306,26 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 
 
 
+.response {
+    float: right;
+    margin-top: 24px;
+    margin-left: 20px;
+    display: none;
+    
+}
+
+
+
+
+
+@media (max-width:991px){
+    .response{
+        display: block;
+    }
+    
+    nav ul li {
+       display: none;
+        
+    }
+
+}
