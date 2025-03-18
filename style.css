@@ -21,7 +21,9 @@ h3.nav{
     margin-left: 17px;
     margin-top: 18px;
     color: white;
+    cursor: pointer;
 }
+
 #navbu{
     background-color: white ;
     color: #e6a48f;
@@ -62,6 +64,7 @@ h3.nav{
        
 
     }
+    
     #navbu{
         
         margin-right: 30px;
@@ -155,7 +158,7 @@ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 background-color: black;
 }
 .icon-user:hover .popup-box{
-  
+   
     display: block;
 }
 #search{
@@ -523,6 +526,101 @@ ul li a:hover{
 
 
 /* contact us */
+.contact-us{
+    margin-top: 5%;
+    border-radius: 20px;
+    
+}
+.contac{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.cont{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+.inputo{
+    text-align: center;
+}
+
+
+.mb2{
+   
+    margin-top: 30px;
+    text-decoration: underline;
+}
+.mb2 input{
+    padding: 5px 16px;
+    border: none;
+    text-decoration: underline;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.mb3{
+   
+    margin-top: 30px;
+    
+    text-decoration: underline;
+}
+.mb3 input{
+    padding: 5px 16px;
+    border: none;
+    text-decoration: underline;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+}
+.mb4{
+    margin-right: 6px;
+    margin-top: 30px;
+    margin-left: px;
+   
+    
+}
+.mb4 textarea{
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.mb5{
+    margin-top: 20px;
+   
+    margin-bottom: 10px;
+}
+.mb5 button{
+    padding: 7px 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    
+}
+#mail{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+#location{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+#phone{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+
+
 /* Aboutus */
 .About{
     width: 280px;
@@ -643,3 +741,11 @@ ul li a:hover{
       width: calc(100% / 2 - 10px);
     }
   }
+  .hide {
+    display: none;
+}
+
+
+
+
+
