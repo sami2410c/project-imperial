@@ -676,7 +676,7 @@ ul{
     font-size: 30px;
     color: white;
     text-transform: capitalize;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 .footer-col  h4::before{
@@ -726,20 +726,8 @@ ul li a{
     text-align: center;
     margin-right: 10px;
 }
-.rights{
-    text-align: center;
-    color: white;
-    margin-left: 35%;
-    margin-top: 10px;
-}
-.res{
-    color: white;    
-}
-@media(max-width: 850px){
-    .rights{
-        margin-left: 30%;
-    }
-}
+
+
 
 
 @media(max-width: 740px){
@@ -748,9 +736,7 @@ ul li a{
         margin-bottom: 30px;
         text-align: center;
     }
-    .rights{
-        margin-left: 26%;
-    }
+    
     .footer-col h4::before{
         all: unset;
     }
@@ -758,8 +744,5 @@ ul li a{
 @media(max-width: 555px){
     .footer-col{
         width: 100%;
-    }
-    .rights{
-        margin-left: 17%;
     }
 }
